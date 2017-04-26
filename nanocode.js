@@ -91,3 +91,39 @@ $(document).on('mouseenter', "#third_picture", function() {
     // Animation complete.
   })
 });
+
+$(document).on('mouseenter', "#sixth_picture", function() {
+  $("#sixth_picture").removeClass("downscaletransformation"),
+  $("#sixth_picture").addClass("upscaletransformation"),
+  $("#sixth_picture").animate({
+    opacity: 1,
+  }, 250, function() {
+    // Animation complete.
+  })
+}).on('mouseout', "#sixth_picture", function() {
+  $("#sixth_picture").removeClass("upscaletransformation"),
+  $("#sixth_picture").addClass("downscaletransformation"),
+  $("#sixth_picture").animate({
+    opacity: 0.85,
+  }, 250, function() {
+    // Animation complete.
+  })
+});
+
+$(document).on('mouseenter', "#seventh_picture", function() {
+  $("#seventh_picture").removeClass("downscaletransformation"),
+  $("#seventh_picture").addClass("upscaletransformation"),
+  $("#seventh_picture").animate({
+    opacity: 1,
+  }, 250, function() {
+    // Animation complete.
+  })
+}).on('mouseout', "#seventh_picture", function() {
+  $("#seventh_picture").removeClass("upscaletransformation"),
+  $("#seventh_picture").addClass("downscaletransformation"),
+  $("#seventh_picture").animate({
+    opacity: 0.85,
+  }, 250, function() {
+    // Animation complete.
+  })
+});
